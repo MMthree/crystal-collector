@@ -1,0 +1,15 @@
+/*cyan: #5acff0
+purple: #331f4e
+pink: #b923a9
+green: #82c461
+*/
+
+body {
+    font-family: 'VT323', monospace;
+    background-color: #331f4e;
+    color: #5acff0;
+}
+
+ul li {
+    font-size: 20px;
+}
