@@ -7,7 +7,7 @@ var gemValues = [];
 console.log(gemValues)
 
 
-// inputs the score you need to match to the webpage
+// sets the score you need to match
 $("#computer-score").text(compNum);
 
 //Generates 4 random numbers and puts them in gemValues array
@@ -16,12 +16,12 @@ for (var i = 0; i < 4; i++) {
     gemValues.push(gemRandNum);  
 }
 
-var gemOneAdd = $("#gem-one") = gemValues[0];
-console.log(gemOneAdd)
+
 
 //The commented out code below is working to give the gems each their own number and 
-//adding it to the score, but only once. I couldnt't figure out how to keep adding to the score
-//with every click.  
+//adding it to the score, but it only adds once. I couldnt't figure out how to keep adding to the score
+//with every click.  The other live code on lines 42-49 is random stuff I was trying without the green code below.
+//I was also changing stuff last night while showing Tanya so hopefully this all makes sense lol
 
 //write's the gem value to the page
 // $("#gem-one").on("click", function() {
@@ -37,6 +37,11 @@ console.log(gemOneAdd)
 //     var gemFourAdd = document.getElementById("user-score").innerHTML = gemValues[3];
 // });
     
+
+
+var gemOneAdd = $("#gem-one") = gemValues[0];
+console.log(gemOneAdd)
+
 
 $("img").on("click", function(){
 
