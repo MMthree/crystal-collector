@@ -1,10 +1,12 @@
 
 var compNum = Math.floor(Math.random() *108 + 12);
-var userScore = "";
+var userScore;
 var userWins = "";
 var userLosses = "";
 var gemValues = [];
 console.log(gemValues)
+
+
 
 
 // sets the score you need to match
@@ -16,12 +18,22 @@ for (var i = 0; i < 4; i++) {
     gemValues.push(gemRandNum);  
 }
 
+//assigns a value from gemValues[] to the gem images
+for (var i=0; i < gemValues.length; i++) {
+    $(".crystal");
+}
 
 
-//The commented out code below is working to give the gems each their own number and 
-//adding it to the score, but it only adds once. I couldnt't figure out how to keep adding to the score
-//with every click.  The other live code on lines 42-49 is random stuff I was trying without the green code below.
-//I was also changing stuff last night while showing Tanya so hopefully this all makes sense lol
+//gives each crystal image a number from gemValues array
+for( i=0; i<gemValues.length; i++) {
+    $(".crystals").data("value");
+}
+
+
+
+
+
+
 
 //write's the gem value to the page
 // $("#gem-one").on("click", function() {
@@ -39,11 +51,13 @@ for (var i = 0; i < 4; i++) {
     
 
 
-var gemOneAdd = $("#gem-one") = gemValues[0];
-console.log(gemOneAdd)
+// var gemOneAdd = $("#gem-one") = gemValues[0];
+// console.log(gemOneAdd)
 
 
-$("img").on("click", function(){
+// $("img").on("click", function(){
+//     for (var i=0; i<gemValues.length; i++){
+//         console.log(gemvaules)
+//     }
 
-
-});
+// });
