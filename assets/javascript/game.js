@@ -1,8 +1,8 @@
 
 var compNum = Math.floor(Math.random() *108 + 12);
 var userScore;
-var userWins = "";
-var userLosses = "";
+var userWins;
+var userLosses;
 var gemValues = [];
 console.log(gemValues)
 
@@ -27,17 +27,29 @@ generateGemNumber();
 
     $('img').each(function (index) {
         $(this).attr('data-crystal', gemValues[index]);
-        $("#user-score").text($(this).attr("data-crystal",));
+        // $("#user-score").text($(this).attr("data-crystal",)); //trying to keep adding points to the user score
 
     })
     
     $('img').on('click', function(){
+        $("#user-score").text(gemValues += userScore);
         console.log($(this).attr('data-crystal'));
     });
     
- 
+
+
+    if (userScore === compNum) {
+        userWins++;
+        $("#user-wins").text(userWins);
+    } else if (userScore > compNum) {
+        userLosses++;
+        $("#user-losses").text(userLosses);
+    }
 
 
 //write's the gem value to the page
+
+
+
 
 })
