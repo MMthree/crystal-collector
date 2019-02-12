@@ -12,3 +12,5 @@
   * Click on one Crystal at a time to add to your score.
   * Memorize how much each Crystal added to your score.
   * Click the Crystals you think you will need reach the "Match this:" number.
+
+### Try it out! || https://mmthree.github.io/crystal-collector/
